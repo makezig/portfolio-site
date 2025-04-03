@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background: hsl(264, 29%, 19%);
+    color: aqua;
+    margin-bottom: 70px;
+}

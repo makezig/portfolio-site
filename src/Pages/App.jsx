@@ -9,13 +9,13 @@ function App() {
   return(
     
     <BrowserRouter>
+    <Header/>
       <Routes>
          <Route path=''/>
-         <Route index element={<Header/>}/>
+         <Route index element={<Card/>}/>
+         <Route index element={<Footer/>}/>
       </Routes>
-        <Food/>
-        <Card/>
-        <Footer/>
+      <Footer/>
     </BrowserRouter>
   );
 }
