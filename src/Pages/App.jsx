@@ -2,18 +2,17 @@ import Header from '../Components/Header.jsx'
 import { BrowserRouter,Routes,Route } from 'react-router';
 import Footer from '../Components/Footer.jsx';
 import Food from '../Components/Food.jsx';
-import Card from '../Components/Card.jsx';
+
+import HomePage from '../Components/HomePage.jsx';
 
 function App() {
   
   return(
     
     <BrowserRouter>
-    <Header/>
+    <HomePage/>
       <Routes>
          <Route path=''/>
-         <Route index element={<Card/>}/>
-         <Route index element={<Footer/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

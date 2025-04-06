@@ -1,23 +1,16 @@
 import profilePic from '../assets/ProfilePicture.jpg'
 import '../CSS/card.css'
+import { NavLink } from "react-router";
 
-function Card(){
+function Card(projects){
     return(
         <>
-        <div className="card">
-            <div>
-                <img className="profPic" src={profilePic} alt="profile picture"></img>
-                <h2>Marqus Tuntur</h2>
-            </div>
-
-            <p className='myDescription'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Natus iste qui sint omnis facilis ad enim culpa dolorem impedit vero, 
-                tempora eius fuga aperiam delectus necessitatibus nihil magnam quasi labore!
-            </p> 
+        <div>
+            <img className="projectPIC" src={projects.image} alt="project picture"></img>
+            <h2 className="projectTitle"><NavLink to="#">{projects.name}</NavLink></h2>
+            <p>{projects.text}</p>
         </div>
-            <p>I'm an artiist</p>
-        
+           
         </>
     );
 }
