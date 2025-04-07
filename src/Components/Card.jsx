@@ -6,9 +6,11 @@ function Card(projects){
     return(
         <>
         <div>
-            <img className="projectPIC" src={projects.image} alt="project picture"></img>
-            <h2 className="projectTitle"><NavLink to="#">{projects.name}</NavLink></h2>
-            <p>{projects.text}</p>
+            <div className="cardElements">
+                <img className="projectPIC" src={projects.image} alt="project picture"></img>
+                <h2 className="projectTitle"><NavLink to="#">{projects.name}</NavLink></h2>
+                <p className="projectText">{projects.text}</p>
+            </div>
         </div>
            
         </>
